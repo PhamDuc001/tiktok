@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap');
 :root {
     --primary: #fe2c55;
+    --black: #000;
+    --text-color: #333;
+    --default-layout-header-width: 1150px;
+    --default-layout-header-height: 60px;
 }
 
 html {
@@ -9,6 +13,8 @@ html {
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -18,4 +24,16 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+a[href] {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+input,
+button,
+[tabindex] {
+    outline: none;
+    border: none;
 }
