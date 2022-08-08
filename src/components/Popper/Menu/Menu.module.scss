@@ -17,7 +17,35 @@
     justify-content: flex-start;
     border-radius: 0;
     padding: 11px 16px;
+    background-color: rgb(243, 242, 242);
+    line-height: 1.8rem;
+    border-bottom: 1px solid #ccc;
+    font-weight: 600;
     &:hover {
         background-color: rgba(22, 24, 35, 0.03);
     }
+    &.separate {
+        border-top: 1px solid red !important;
+        z-index: 2;
+    }
+}
+
+// Header-item
+.header {
+    position: relative;
+    height: 50px;
+}
+
+.back-btn {
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
