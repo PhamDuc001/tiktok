@@ -6,6 +6,7 @@
     --text-color: #333;
     --default-layout-header-width: 1150px;
     --default-layout-header-height: 60px;
+    --font-family: 'ProximaNova', sans-serif;
 }
 
 html {
@@ -33,7 +34,7 @@ html {
 
 body {
     // font-family: 'Montserrat', sans-serif;
-    font-family: 'ProximaNova', 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;

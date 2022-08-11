@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 var onChange = () => {};
-function Menu({ children, items = [] }, onChange) {
+function Menu({ children, items = [] }, hideOnClick = 'false', onChange) {
     const [history, setHistory] = useState([{ data: items }]);
     // console.log(history);
     const current = history[history.length - 1];
@@ -39,6 +39,7 @@ function Menu({ children, items = [] }, onChange) {
             interactive
             delay={[0, 700]}
             placement="bottom-end"
+            hideOnClick={hideOnClick}
             render={(attrs) => (
                 <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
                     <PopperWrapper>
