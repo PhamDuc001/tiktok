@@ -34,6 +34,7 @@
 .header {
     position: relative;
     height: 50px;
+    flex-shrink: 0;
 }
 
 .back-btn {
@@ -48,4 +49,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.menu-body {
+    // overflow-y: auto;
+    // background-color: lightblue;
+    overflow: overlay;
+    width: 224px;
+    // height: 294px;
+    &::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+    }
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #c1c1c1;
+    }
 }

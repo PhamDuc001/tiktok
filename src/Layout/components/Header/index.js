@@ -22,7 +22,7 @@ import Image from '~/components/Image';
 import Menu from '~/components/Popper/Menu';
 import styles from './Header.module.scss';
 import Search from '../Search';
-import config from '~/config/';
+import routes from '~/config/routes';
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -30,6 +30,62 @@ const MENU_ITEMS = [
         icon: <FontAwesomeIcon icon={faEarthAsia} />,
         title: 'English',
         children: [
+            {
+                code: 'en',
+                title: 'English',
+            },
+            {
+                code: 'vi',
+                title: 'Vietnamese',
+            },
+            {
+                code: 'en',
+                title: 'English',
+            },
+            {
+                code: 'vi',
+                title: 'Vietnamese',
+            },
+            {
+                code: 'en',
+                title: 'English',
+            },
+            {
+                code: 'vi',
+                title: 'Vietnamese',
+            },
+            {
+                code: 'en',
+                title: 'English',
+            },
+            {
+                code: 'vi',
+                title: 'Vietnamese',
+            },
+            {
+                code: 'en',
+                title: 'English',
+            },
+            {
+                code: 'vi',
+                title: 'Vietnamese',
+            },
+            {
+                code: 'en',
+                title: 'English',
+            },
+            {
+                code: 'vi',
+                title: 'Vietnamese',
+            },
+            {
+                code: 'en',
+                title: 'English',
+            },
+            {
+                code: 'vi',
+                title: 'Vietnamese',
+            },
             {
                 code: 'en',
                 title: 'English',
@@ -48,7 +104,6 @@ const MENU_ITEMS = [
     {
         icon: <FontAwesomeIcon icon={faKeyboard} />,
         title: 'Keyboard shortcuts  ',
-        separate: true,
     },
 ];
 
@@ -75,13 +130,14 @@ function Header() {
             icon: <FontAwesomeIcon icon={faSignOut} />,
             title: 'LogOut',
             to: '/logout',
+            separate: true,
         },
     ];
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <Link to={config.routes.home}>
+                    <Link to={routes.home}>
                         <img src={images.logo.default} alt="Logo Tiktok" />
                     </Link>
                 </div>

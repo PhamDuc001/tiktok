@@ -73,15 +73,18 @@ input:not(:placeholder-shown)~.search-btn {
     color: rgba(22, 24, 35, 0.75);
 }
 
-@keyframes loading {
+@keyframes animate {
     from {
         transform: rotate(0);
+        transform: translateY(-50%);
     }
     to {
         transform: rotate(360deg);
+        transform: translateY(-50%);
     }
 }
 
 .loading {
-    animation: loading, linear, 0.5;
+    animation: animate, linear, 0.5;
+    color: red;
 }
