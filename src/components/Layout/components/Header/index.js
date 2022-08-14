@@ -55,7 +55,7 @@ const MENU_ITEMS = [
 function Header() {
     const [searchResult, setSearchResult] = useState([]);
 
-    const currentUser = true;
+    const currentUser = false;
     const userMenu = [
         {
             icon: <FontAwesomeIcon icon={faUser} />,

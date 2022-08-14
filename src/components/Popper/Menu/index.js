@@ -12,7 +12,7 @@ const cx = classNames.bind(styles);
 var onChange = () => {};
 function Menu({ children, items = [] }, hideOnClick = 'false', onChange) {
     const [history, setHistory] = useState([{ data: items }]);
-    console.log(history);
+    // console.log(history);
     const current = history[history.length - 1];
 
     const renderItems = () => {
