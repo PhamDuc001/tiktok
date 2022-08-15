@@ -14,7 +14,7 @@ function Menu({ children, items = [] }, hideOnClick = 'false', onChange) {
     const [history, setHistory] = useState([{ data: items }]);
     // console.log(history);
     const current = history[history.length - 1];
-
+    // console.log('current:', current);
     const renderItems = () => {
         return current.data.map((item, index) => {
             const isParent = !!item.children;
@@ -38,6 +38,7 @@ function Menu({ children, items = [] }, hideOnClick = 'false', onChange) {
         <Tippy
             offset={[12, 8]}
             interactive
+            // visible
             delay={[0, 700]}
             placement="bottom-end"
             hideOnClick={hideOnClick}
@@ -46,7 +47,8 @@ function Menu({ children, items = [] }, hideOnClick = 'false', onChange) {
                     <PopperWrapper>
                         {history.length > 1 && (
                             <HeaderMenu
-                                title={current.title}
+                                // title={current.title}
+                                title="Language"
                                 onBack={() => {
                                     setHistory((prev) => prev.slice(0, prev.length - 1));
                                 }}

@@ -31,6 +31,9 @@ const MENU_ITEMS = [
         title: 'English',
         children: [
             {
+                titleHeading: 'Language',
+            },
+            {
                 code: 'en',
                 title: 'English',
             },
@@ -48,14 +51,13 @@ const MENU_ITEMS = [
     {
         icon: <FontAwesomeIcon icon={faKeyboard} />,
         title: 'Keyboard shortcuts  ',
-        separate: true,
     },
 ];
 
 function Header() {
     const [searchResult, setSearchResult] = useState([]);
 
-    const currentUser = false;
+    const currentUser = true;
     const userMenu = [
         {
             icon: <FontAwesomeIcon icon={faUser} />,
@@ -75,6 +77,7 @@ function Header() {
             icon: <FontAwesomeIcon icon={faSignOut} />,
             title: 'LogOut',
             to: '/logout',
+            separate: true,
         },
     ];
     return (
