@@ -1,1 +1,1 @@
-export { default as useDebounce } from '~/Hooks/useDebounce';
+export { default as useDebounce } from './useDebounce';

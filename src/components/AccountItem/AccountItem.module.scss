@@ -1,12 +1,11 @@
 .wrapper {
     display: flex;
-    align-items: centers;
-    padding: 9px 16px;
-    background-color: aliceblue;
-    border-bottom: 1px solid #ccc;
+    align-items: center;
+    padding: 6px 16px;
+    cursor: pointer;
+
     &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
-        cursor: pointer;
+        background: rgba(22, 24, 35, 0.03);
     }
 }
 
@@ -23,17 +22,16 @@
 }
 
 .name {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
+}
+
+.check {
+    margin-left: 6px;
+    color: rgb(32, 213, 236);
 }
 
 .username {
     font-size: 1.4rem;
     color: rgba(22, 24, 35, 0.5);
-}
-
-.check {
-    margin-left: 8px;
-    color: rgb(32, 213, 236);
-    font-size: 1.2rem;
 }

@@ -1,5 +1,7 @@
-import routes from '~/config/routes';
+import routes from './routes';
+
 const config = {
-    routes: routes,
+    routes,
 };
+
 export default config;
